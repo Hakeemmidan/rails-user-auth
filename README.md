@@ -8,14 +8,24 @@ A relatively easy to install and use **user authorization for people in a hurry*
 - Frontend: React, Redux, SASS
 
 ## Noticeable Features
-- Mobile friendly minimalistic design
+- Mobile friendly responsiveness
 - Email confirmation
 - Password reset
 - SMTP email sending mechanism
 - BEM CSS naming convention
 - 7-1 SASS file structure
+- Minimalistic design
 
 ## Images
+- PC view:
+
+<img src="app/assets/images/pc_sample_view.png" alt="drawing" width="500"/>
+
+- Mobile view:
+
+<img src="app/assets/images/mobile_sample_view.png" alt="drawing" height="500"/>
+
+- Note: These images have a purple border (the actual app doesn't)
 
 ## Installation
 1. [Install Rails](http://installrails.com/) if you don't have it
