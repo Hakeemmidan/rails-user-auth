@@ -1,0 +1,61 @@
+.header__btn {
+  padding: 0 2vh;
+  text-decoration: none;
+
+  &--login {
+    @extend .header__btn;
+    border: 1px solid grey;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    border-radius: 7px;
+    color: black;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &--register {
+    @extend .header__btn;
+    color: black;
+    &:hover {
+      text-decoration: underline;    
+    }
+  }
+}
+
+.session__btn {
+  all: initial;
+  * {
+    all: unset;
+  }
+  // ^ clears all styling
+  display: block;
+  cursor: pointer;
+  border: 1px solid grey;
+  padding-right: 2vh;
+  padding-left: 2vh;
+  padding-top: 1.3vh;
+  padding-bottom: 1.3vh;
+  text-decoration: none; 
+  border-radius: 7px;
+  margin: 7px;
+  text-align: center;
+
+  &--nav {
+    @extend .session__btn;
+    color: black;
+    &:hover {
+      background-color: rgb(247, 247, 247)
+    }
+  }
+
+  &--submit {
+    @extend .session__btn;
+    color: white;
+    background-color: black;
+    &:hover {
+      background-color: rgb(55, 55, 55);
+    }
+  }
+}

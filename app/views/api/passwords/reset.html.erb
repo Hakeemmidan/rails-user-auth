@@ -1,0 +1,29 @@
+<div class="u-horizontally-center-text u-large-margin-top">
+    <% if @no_token %>
+        <h1>
+            Something unexpected happened. Please try resetting your password again.
+            <br>
+            If that doesn't work. Please contact me at hakeemmidan@gmail.com and we'll see what is going on.
+        </h1>
+    <% elsif @link_valid%>
+        <h1>
+            Password reset successfully
+        </h1>
+    <% elsif !@link_valid %>
+        <h1>
+            Link is invalid or expired
+            <br>
+            Try generating a new link
+        </h1>
+    <% else %>
+        <h1>
+            Something unexpected happened. Please try resetting your password again.
+            <br>
+            If that doesn't work. Please contact me at hakeemmidan@gmail.com and we'll see what is going on.
+        </h1>
+    <% end %>
+
+    <p class="home-link">
+        Go to home page
+    </p>
+</div>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Hi <%= @user.username %>!</h1>
+    <p>Thank you for joining AppName 🐣</p>
+    <p>Please click on the following link to confirm your registeration:</p>
+    <div><%= confirm_email_api_user_url(@user.confirm_token) %></div>
+  </body>
+</html>

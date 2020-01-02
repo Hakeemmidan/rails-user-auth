@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AppName</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <% if current_user %>
+      <script>
+        window.currentUser = { 
+          "id": <%= current_user.id %>,
+          "username": "<%= current_user.username %>"
+          };
+      </script>
+    <% else %>
+      <script>
+        window.currentUser = null;
+      </script>
+    <% end %>
+
+  </head>
+  
+  <body>
+    <%= yield %>
+    <script>
+      $('.home-link').click( () => {
+          location.href = location.origin;
+      });
+    </script>
+  </body>
+</html>

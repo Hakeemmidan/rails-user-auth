@@ -1,0 +1,87 @@
+.session__form-box {
+  border: 1px solid grey;
+  width: 33%;
+  padding: 10vh 7vh;
+}
+
+.session__form-container {
+  padding-top: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+.session__textbox {
+  width: 90%;
+  display: block;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  border-style: none;
+  border: 1px solid #E1E3DF;
+  box-shadow: none;
+  max-width: 100%;
+}
+
+.session__msg {
+  &--confirmation {
+    color: #9F6000;
+    background-color: #FEEFB3;
+  }
+  
+  &--error {
+    // This nesting gives bullet different color than text
+    color: darkred;
+    background-color: darkred;
+    padding: 10px 4px;
+    &::first-line {
+      color: white;
+    }
+  }
+}
+
+.session__link {
+  cursor: pointer;
+  color: gray;
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.session__or-container {
+	width: 100%;
+	text-align: center;
+}
+
+.session__or-container hr {
+	margin-left: auto;
+	margin-right: auto;
+  width: 40%;
+  color: lightgrey;
+}
+
+.session__or-hr {
+	&--left {
+    float: left;
+  }
+  
+  &--right {
+	  float: right;
+  }
+}
+
+.home-link {
+  color: #15c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .session__form-box {
+    width: 60%;
+    padding: 6vh 7vh;
+  }
+}

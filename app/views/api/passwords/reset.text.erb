@@ -1,0 +1,14 @@
+<% if @no_token %>
+  Something unexpected happened. Please try resetting your password again.
+  If that doesn't work. Please contact me at hakeemmidan@gmail.com and we'll see what is going on.
+<% elsif @link_valid%>
+  Password reset successfully
+<% elsif !@link_valid %>
+  Link is invalid or expired
+  Try generating a new link
+<% else %>
+  Something unexpected happened. Please try resetting your password again.
+  If that doesn't work. Please contact me at hakeemmidan@gmail.com and we'll see what is going on.
+<% end %>
+
+Go to <%= link_to "Home", root_path %> page, and refresh the page

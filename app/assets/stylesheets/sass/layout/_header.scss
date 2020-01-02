@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  height: 10vh;
+  border-bottom: 1px solid grey;
+}
+
+.logo {
+  font-size: calc(40px + 0.5vw);
+  text-decoration: none; 
+  color: grey;
+}
+
+.header__right-container {
+  display: flex;
+
+  &--username {
+    padding: 1vh 20px;
+  }
+
+  &--logout-btn {
+    border: 1px solid grey;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    text-decoration: none; 
+    border-radius: 7px;
+    cursor: pointer;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    font-size: calc(28px + 1vw);
+  }
+}
