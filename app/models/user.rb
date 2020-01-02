@@ -1,8 +1,8 @@
 class User < ApplicationRecord
   validates :username, :session_token, presence: true, uniqueness: {case_sensitive: false}
   validates :email, presence: true,
-            format: { with: /[a-zA-Z0-9_.+-]+@(oregonstate)\.edu/i,
-                    message: "must have an @oregonstate.edu domain" },
+            format: { with: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i,
+                    message: "Please enter proper email format" },
             uniqueness: { case_sensitive: false }
   validates :password_digest, presence: { message: 'Password can\'t be blank' }
   validates :password, length: { minimum: 6, allow_nil: true }
