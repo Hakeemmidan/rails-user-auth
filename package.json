@@ -29,15 +29,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hakeemmidan/RailsUserAuth.git"
+    "url": "git+https://github.com/Hakeemmidan/rails-user-auth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hakeemmidan/RailsUserAuth/issues"
+    "url": "https://github.com/Hakeemmidan/rails-user-auth/issues"
   },
-  "homepage": "https://github.com/Hakeemmidan/RailsUserAuth#readme",
+  "homepage": "https://github.com/Hakeemmidan/rails-user-auth#readme",
   "devDependencies": {
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0"

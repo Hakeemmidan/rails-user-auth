@@ -96,7 +96,7 @@ export class SessionForm extends React.Component {
       <div className="session__form-container">
         <div className="session__form-box">
           <form onSubmit={this.handleSubmit}>
-            Welcome to OSUSCN!
+            Welcome to AppName!
 
             <br />
 

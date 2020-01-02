@@ -21,7 +21,7 @@ const Header = ({ currentUser, logout }) => {
 
   return (
     <header>
-      <Link to="/" className="logo"> OSUSCN </Link>
+      <Link to="/" className="logo"> AppName </Link>
       { currentUser ? personalGreeting() : sessionLinks() }
     </header>
   )

@@ -26,6 +26,8 @@ A relatively easy to install and use **user authorization for people in a hurry*
         1. Installs Rails dependencies
     3. `npm install`
         1. Installs needed npm packages
+    4. `rails db:setup`
+        1. Sets up database
 
 ## Usage
 1. In terminal:
@@ -34,7 +36,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
         1. Replace "` New-Name `" with your app's name.
 2. In code editor:
     1. Replace-all "AppName" with your app's name.
-    2. Go to `config/application.yml`
+    3. Go to `config/application.yml`
        1. Place this code snippet at bottom of file:
           1. Replace `'example@gmail.com'` with your email
           2. Replace `'1234567'` with your email password
