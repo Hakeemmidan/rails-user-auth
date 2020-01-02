@@ -8,7 +8,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
 - Frontend: React, Redux, SASS
 
 ## Noticeable Features
-- Mobile friendly responsiveness
+- Mobile / tablet friendly responsiveness
 - Email confirmation
 - Password reset
 - SMTP email sending mechanism
