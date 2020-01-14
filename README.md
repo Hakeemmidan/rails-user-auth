@@ -29,7 +29,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
 
 ## Installation
 1. [Install Rails](http://installrails.com/) if you don't have it
-2. [Install PosrgreSQL](http://postgresguide.com/setup/install.html) if you don't have it
+2. [Install PostgreSQL](http://postgresguide.com/setup/install.html) if you don't have it
 3. In terminal:
     1. Go to project directory
     2. `bundle install`
