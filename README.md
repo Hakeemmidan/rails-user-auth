@@ -65,10 +65,8 @@ gmail_password: '1234567'
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Trouble
-If you get stuck, and you aren't sure what to do, please don't hesitate to email me at Hakeemmidan@gmail.com with your issue.
-
-I will try to get back to you within 1 to 2 business days.
+## Deployment
+If you plan to use a hosting service (e.g. Bluehost, Heroku, etc.) to deploy your site, then don't forget to add `gmail_username` and `gmail_password` as configuration variables.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
