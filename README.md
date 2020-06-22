@@ -50,7 +50,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
        1. Place this code snippet at bottom of file:
           1. Replace `'example@gmail.com'` with your email
           2. Replace `'1234567'` with your email's password
-        -  NB: Make sure that this file (`application.yml`) is [git ignored](https://guide.freecodecamp.org/git/gitignore/) so you don't accidentally share it on Github or other places
+        -  **NB: Make sure that this file (`application.yml`) is [git ignored](https://guide.freecodecamp.org/git/gitignore/) so you don't accidentally share it on Github or other places**
 ```Ruby
 api_key: 'API Key'
 domain: 'Domain'
