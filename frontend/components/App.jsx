@@ -5,6 +5,7 @@ import HeaderContainer from './header/header_container';
 import SignUpFormContainer from './auth/signup_form_container';
 import LogInFormContainer from './auth/login_form_container';
 import ForgotPasswordFormContainer from './auth/forgot_password_form_container';
+import { ExampleContent } from './example_content/ExampleContent';
 
 export const App = () => (
   <div>
@@ -13,7 +14,7 @@ export const App = () => (
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
       <AuthRoute exact path="/forgot-password" component={ForgotPasswordFormContainer} />
-      <Route exact path="/" component={LogInFormContainer} />
+      <Route exact path="/" component={ExampleContent} />
     </Switch>
   </div>
 );
