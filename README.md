@@ -29,7 +29,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
 
 ## Installation
 1. [Install Rails](http://installrails.com/) if you don't have it
-2. [Install PosrgreSQL](http://postgresguide.com/setup/install.html) if you don't have it
+2. [Install PostgreSQL](http://postgresguide.com/setup/install.html) if you don't have it
 3. In terminal:
     1. Go to project directory
     2. `bundle install`
@@ -50,7 +50,7 @@ A relatively easy to install and use **user authorization for people in a hurry*
        1. Place this code snippet at bottom of file:
           1. Replace `'example@gmail.com'` with your email
           2. Replace `'1234567'` with your email's password
-        -  Side note: This file is [git ignored](https://guide.freecodecamp.org/git/gitignore/) so you don't have to worry about it getting shared on Github =)
+        -  **NB: Make sure that this file (`application.yml`) is [git ignored](https://guide.freecodecamp.org/git/gitignore/) so you don't accidentally share it on Github or other places**
 ```Ruby
 api_key: 'API Key'
 domain: 'Domain'
@@ -64,10 +64,8 @@ gmail_password: '1234567'
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Trouble
-If you get stuck, and you aren't sure what to do, please don't hesitate to email me at Hakeemmidan@gmail.com with your issue.
-
-I will try to get back to you within 1 to 2 business days.
+## Deployment
+If you plan to use a hosting service (e.g. Bluehost, Heroku, etc.) to deploy your site, then don't forget to add `gmail_username` and `gmail_password` as configuration variables.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
