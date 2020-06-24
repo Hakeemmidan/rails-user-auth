@@ -3,7 +3,7 @@ class Api::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      SendEmailJob.set(wait: 0.5.seconds).perform_later(@user.id)
+      UserMailer.confirmation_email(@user.id).deliver_now
       render json: ["Please check your email (#{@user.email})"]
     else
       render json: @user.errors.full_messages, status: 422

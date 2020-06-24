@@ -58,8 +58,7 @@ gmail_username: 'example@gmail.com'
 gmail_password: '1234567'
 ```
 3. In terminal (each in separate tab):
-    1. `bundle exec rails jobs:work`
-    2. `rails s`
+    1. `rails s`
     3. `npm start`
 
 ## Contributing
