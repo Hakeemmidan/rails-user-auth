@@ -1,3 +1,5 @@
+@import '../abstract/mixins';
+
 .header__btn {
   padding: 0 2vh;
   text-decoration: none;
@@ -9,17 +11,21 @@
     padding-bottom: 1.3vh;
     border-radius: 7px;
     color: black;
-    &:hover {
-      background-color: black;
-      color: white;
+    @include hover-supported() {
+      &:hover {
+        background-color: black;
+        color: white;
+      }
     }
   }
 
   &--register {
     @extend .header__btn;
     color: black;
-    &:hover {
-      text-decoration: underline;    
+    @include hover-supported() {
+      &:hover {
+        text-decoration: underline;    
+      }
     }
   }
 }
@@ -45,8 +51,10 @@
   &--nav {
     @extend .session__btn;
     color: black;
-    &:hover {
-      background-color: rgb(247, 247, 247)
+    @include hover-supported() {
+      &:hover {
+        background-color: rgb(247, 247, 247)
+      }
     }
   }
 
@@ -54,8 +62,10 @@
     @extend .session__btn;
     color: white;
     background-color: black;
-    &:hover {
-      background-color: rgb(55, 55, 55);
+    @include hover-supported() {
+      &:hover {
+        background-color: rgb(55, 55, 55);
+      }
     }
   }
 }

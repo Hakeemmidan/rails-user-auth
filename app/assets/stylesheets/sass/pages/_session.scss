@@ -1,3 +1,5 @@
+@import '../abstract/mixins';
+
 .session__form-box {
   border: 1px solid grey;
   width: 33%;
@@ -46,8 +48,10 @@
   cursor: pointer;
   color: gray;
   text-decoration: underline;
-  &:hover {
-    opacity: 0.8;
+  @include hover-supported() {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
