@@ -1,4 +1,5 @@
 # Rails User Auth
+**Note: This project has now been archieved. Check out the [devise gem](https://github.com/heartcombo/devise) for a great alternative.**
 
 A relatively easy to install and use **user authorization for people in a hurry**.
 
